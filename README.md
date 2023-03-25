@@ -1,15 +1,13 @@
 # Django-PostgreSQL Bootstrap Project
 
-A minimalist [Django](https://www.djangoproject.com)-[PostgreSQL](https://www.postgresql.org) Bootstrap Project - Somewhere between a `django-admin startproject` and a `django cookiecutter` bootstrap project
-
-- Completely dockerized
-- Docker commands shortcuts using `Makefile`
-- Local and Production enviroments/compose files
-- PostgreSQL exposed so can be accessed using [![PgAdmin4]](https://www.pgadmin.org) and other management tools
-
 [![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)](https://github.com/cookiecutter/cookiecutter-django/)
 
-License: MIT
+A minimalist [Django](https://www.djangoproject.com)-[PostgreSQL](https://www.postgresql.org) Bootstrap Project - Somewhere between a `django-admin startproject` and a `django cookiecutter`
+
+- Completely Dockerized
+- Docker commands shortcuts using `Makefile`
+- Local and Production enviroments/compose files
+- PostgreSQL exposed so can be accessed using [PgAdmin4](https://www.pgadmin.org) or other management tools
 
 ## Settings
 
@@ -21,7 +19,7 @@ Moved to [settings](http://cookiecutter-django.readthedocs.io/en/latest/settings
 mkdir dirname
 cd dirname
 
-git clone 'github.git' .
+git clone 'https://github.com/glaciapag/django-postgres-bootstrap.git' .
 ```
 
 ## Basic Commands
@@ -37,7 +35,31 @@ make docker-build
 ### Running the App using docker-compose
 
 ```commandline
-make docker-run
+make docker-up
+```
+
+### Running the App using docker-compose in detached mode
+
+```commandline
+make docker-up-d
+```
+
+### Creating superuser
+
+```commandline
+make docker-superuser
+```
+
+### Make Migrations
+
+```commandline
+make docker-migrations
+```
+
+### Migrate
+
+```commandline
+make docker-migrate
 ```
 
 ### Access the app
