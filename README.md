@@ -1,10 +1,10 @@
-# Django-PostgreSQL Bootstrap Project
+# Django-PostgreSQL-Docker Bootstrap Project
 
 [![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)](https://github.com/cookiecutter/cookiecutter-django/)
 
 A minimalist [Django](https://www.djangoproject.com)-[PostgreSQL](https://www.postgresql.org) Bootstrap Project - Somewhere between a `django-admin startproject` and a `django cookiecutter`
 
-- Completely Dockerized
+- Completely [Dockerized](https://www.docker.com)
 - Docker commands shortcuts using `Makefile`
 - Local and Production enviroments/compose files
 - PostgreSQL exposed so can be accessed using [PgAdmin4](https://www.pgadmin.org) or other management tools
