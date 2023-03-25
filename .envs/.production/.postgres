@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=mini_oms
+POSTGRES_USER=ByhMAaaeLGuqJqTuOqJFepVfjBUaeJGy
+POSTGRES_PASSWORD=5TS4vThZKlIlJTCQR74ZI3gAuXftQEhw3BZqvOV2tdDTxYOEPNaq93yeGR7cBikm

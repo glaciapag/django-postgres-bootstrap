@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+
+python -m core.manage migrate
+exec python -m core.manage runserver 0.0.0.0:8000
